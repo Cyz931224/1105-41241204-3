@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 插件介紹網站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .nav-tabs {
+            margin-bottom: 20px;
+            justify-content: center; /* 置中對齊 */
+        }
+        .nav-item {
+            margin: 0 10px; /* 調整每個書籤的間距 */
+        }
+        .nav-link {
+            color: black; /* 書籤文字顏色設置為黑色 */
+        }
+        .nav-link:hover {
+            color: darkgray; /* 滑鼠懸停時顏色 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar 位置 -->
+    <div id="navbar-placeholder"></div>
+    <script src="navbar.js"></script>
+
+    <!-- 書籤導航 -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="sweetalert.html">彈出提示框 (SweetAlert2)</a></li>
+        <li class="nav-item"><a class="nav-link" href="moment.html">日期時間處理 (Moment.js)</a></li>
+        <li class="nav-item"><a class="nav-link" href="axios.html">HTTP 客戶端 (Axios)</a></li>
+        <li class="nav-item"><a class="nav-link" href="jquery.html">JavaScript 函式庫 (jQuery)</a></li>
+        <li class="nav-item"><a class="nav-link" href="d3.html">數據可視化 (D3.js)</a></li>
+        <li class="nav-item"><a class="nav-link" href="scroll-effect.html">滾動事件監聽</a></li>
+        <li class="nav-item"><a class="nav-link" href="map.html">地圖展示 (Leaflet.js)</a></li>
+        <li class="nav-item"><a class="nav-link" href="calculator.html">簡易計算器</a></li>
+        <li class="nav-item"><a class="nav-link" href="form-validation.html">表單驗證</a></li>
+        <li class="nav-item"><a class="nav-link" href="lazy-loading-images.html">圖片懶加載</a></li>
+    </ul>
+
+    <div class="container mt-3">
+        <h1>JavaScript 插件介紹網站</h1>
+        <p>選擇下方卡片以查看不同的插件介紹！</p>
+        <div class="row">
+            <!-- 卡片 1：SweetAlert2 -->
+            <div class="col-md-4" id="sweetalert">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SweetAlert2</h5>
+                        <p class="card-text">美觀的彈出提示框，取代原生的 alert。</p>
+                        <a href="sweetalert.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://cdn.jsdelivr.net/npm/sweetalert2@11" target="_blank">SweetAlert2</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 2：Moment.js -->
+            <div class="col-md-4" id="moment">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Moment.js</h5>
+                        <p class="card-text">用於解析、驗證、操作和顯示日期和時間的庫。</p>
+                        <a href="moment.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" target="_blank">Moment.js</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 3：Axios -->
+            <div class="col-md-4" id="axios">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Axios</h5>
+                        <p class="card-text">基於 Promise 的 HTTP 客戶端，用於瀏覽器和 Node.js。</p>
+                        <a href="axios.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" target="_blank">Axios</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 4：jQuery -->
+            <div class="col-md-4" id="jquery">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery</h5>
+                        <p class="card-text">快速、小巧、功能豐富的 JavaScript 函式庫。</p>
+                        <a href="jquery.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://code.jquery.com/jquery-3.6.0.min.js" target="_blank">jQuery</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 5：D3.js -->
+            <div class="col-md-4" id="d3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">D3.js</h5>
+                        <p class="card-text">用於數據驅動的文檔操作的 JavaScript 函式庫。</p>
+                        <a href="d3.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.4/d3.min.js" target="_blank">D3.js</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 6：滾動效果 -->
+            <div class="col-md-4" id="scroll">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">滾動效果</h5>
+                        <p class="card-text">監聽滾動事件的簡單示範。</p>
+                        <a href="scroll-effect.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scroll_event" target="_blank">Scroll Event</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 7：地圖展示 -->
+            <div class="col-md-4" id="map">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">地圖展示</h5>
+                        <p class="card-text">使用 Leaflet.js 顯示地圖的示範。</p>
+                        <a href="map.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://unpkg.com/leaflet/dist/leaflet.js" target="_blank">Leaflet.js</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 8：簡易計算器 -->
+            <div class="col-md-4" id="calculator">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">簡易計算器</h5>
+                        <p class="card-text">簡單的加法計算器示範。</p>
+                        <a href="calculator.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 9：表單驗證 -->
+            <div class="col-md-4" id="form">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">表單驗證</h5>
+                        <p class="card-text">簡單的表單驗證示範。</p>
+                        <a href="form-validation.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement" target="_blank">HTMLFormElement</a></small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 10：Clipboard.js -->
+            <div class="col-md-4" id="clipboard">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clipboard.js</h5>
+                        <p class="card-text">輕鬆複製文本到剪貼板的庫。</p>
+                        <a href="clipboard.html" class="btn btn-primary">查看詳細</a>
+                        <p class="card-text"><small class="text-muted">JS 網址: <a href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" target="_blank">Clipboard.js</a></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
